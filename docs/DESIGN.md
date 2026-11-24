@@ -23,6 +23,7 @@ The game is built on **evolution**, not a tech tree. Your people don't research 
 - **Civilization:** epic time scale, many paths, "one more turn" pull.
 - **SimCity:** the system is the opponent, and building is fun with no need for war.
 - **Guns, Germs, and Steel** (Jared Diamond): geography and domesticable species as the roots of history.
+- **Timberborn:** a colony builder where the environment (droughts, water management) is the real challenge, and success comes from engineering a resilient settlement rather than beating rivals.
 
 ---
 
@@ -334,3 +335,10 @@ Test the core loop before scaling up. If it's fun with dots on a 2D map, the ful
 - **Procedural vs. real-Earth species:** generated species, real ones, or a mix?
 - **Information display:** how to show imprecise information without frustrating players.
 - **Endgame:** what does "surviving solar expansion" look like in play?
+
+### Raised for discussion
+
+- **Pacing over time.** Should years pass quickly at the start and slow down as technology accelerates?
+  - *Notes:* This matches real history. Prehistory spans many thousands of years with slow change, and recent centuries are dense with change. It also fits §6, where the time scale already shifts with the phase of the game. The catch is that evolution needs many generations, so the early game has to run fast for domestication to happen in play time. In the prototype a year already passes in about 4 seconds at top speed. One option is to tie game speed to the *rate of change*: time runs fast when little is changing and slows when discoveries, crises or migrations pile up.
+- **How detailed should reproduction be?** Do we need males and females, or would randomized asexual inheritance with mutation be enough?
+  - *Notes:* The prototype found that tracking sexes creates real effects: small camp lineages die out when they run out of females, and wild males dilute the camp line. These are realistic, but also random and hard for players to read. A simpler model, where offspring copy a parent with small random mutations, would keep selection working (the core mechanic), make the code simpler and faster, and make outcomes more predictable. A middle option is to drop sexes but keep "gene flow" as a deliberate mechanic, where wild animals breeding with the camp population pulls it back toward wild traits. The choice should come down to whether the bottleneck drama is fun or just frustrating.

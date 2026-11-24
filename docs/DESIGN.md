@@ -289,6 +289,22 @@ Test the core loop before scaling up. If it's fun with dots on a 2D map, the ful
 - Then the prey and directed pathways: sparing, feeding, penning, culling.
 - **Question to answer:** Is watching a species change because of how you live engaging?
 
+**Status: playable** (`src/lineage/`, see the README). Six species: wolves, wildcats, mice, aurochs, red deer and boar. There are three pathways: the midden draws in scavengers (commensal), hunting is a choice between hunting freely, culling the wildest, sparing or capturing (prey), and the pen has selective culling (directed). Traits are heritable and shown in words, not numbers.
+
+**What the simulation taught us so far** (from headless runs across several worlds):
+
+- **Dogs emerge without being asked for.** With a midden by camp and scavengers tolerated, about half of valleys produce dogs within 15–25 years. Camp wolves end up far bolder than wild ones, and aggression falls because people kill the biters. Tossing scraps raises the odds.
+- **Some valleys never give you dogs.** If the local wolves start out fierce, people keep killing them and the lineage never takes hold. This is the variability we wanted.
+- **Persecution selection.** Bold wild wolves drawn to camp and killed there leave the *wild* population warier over time.
+- **Gene flow.** Camp boldness leaks back into the wild wolf population.
+- **Bottlenecks matter.** Tiny camp lineages can die out simply by running out of females.
+- **Cattle via the pen.** Capturing calves (adults are too wild) and culling the wildest each autumn produces cattle in about 30–40 years. Body size drifts smaller along the way, a domestication-syndrome effect that wasn't scripted.
+- **Deer can't be domesticated.** They panic and break out of the pen, which is Diamond's point made playable.
+- **Over-hunting** can wipe out the aurochs, and with them the chance of cattle.
+- **Crowding.** A big, busy camp can shut scavengers out entirely. Night-time scavenging was needed to keep the commensal pathway alive.
+
+**Known gaps:** cats rarely settle, the pig pathway is untuned, outcomes vary a lot between seeds, and there is no disease or plant domestication yet.
+
 ### Prototype 2: Discovery system
 
 - A standalone simulation of practice tags → emergent discoveries.
